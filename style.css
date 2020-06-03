@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: arial;
+}
+
+input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.body__blue{
+  background-color: lightblue;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+}
+
+.navbar__blue {
+  background-color: #35aac3;
+  color: white;
+}
+
+.navbar-item--container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.custom-icons {
+  font-size: inherit !important;
+}
+
+.navbar-text {
+  padding-left: 1rem;
+}
+
+.navbar-text__blue {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.navbar-item {
+  display: flex;
+  font-size: inherit;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+}
+
+.navbar-item--search {
+  height: 2rem;
+  width: 15rem;
+  border-radius: 1rem;
+  padding-left: 0.4rem;
+}
+
+.userBild {
+  display: flex;
+  font-size: inherit;
+}
+
+.todo--container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  /*background-color: lightblue;*/
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  padding: 0.5rem;
+}
+
+#todo-template {
+  display: none;
+}
+
+.todo-item__blue {
+  background-color: white;
+  border-bottom: solid lightblue 0.05rem;
+  /*border: solid black 1px;*/
+}
+
+
+.todo-item--title {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin: 0rem 1rem;
+  box-sizing: border-box;
+}
+
+.todo-item--title-text {
+  position: absolute;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: inherit;
+}
+
+
+.todo-item--container {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0rem;
+
+}
+
+.todo-item--button{
+  display: flex;
+  color: #35aac3;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  align-items: center;
+}
+
+.add-todo--text {
+  height: 2rem;
+  flex-grow: 1;
+  margin: 0 1rem;
+}
+
+.addbutton {
+  display: flex;
+  color: white;
+  background-color: inherit;
+  border: none;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /*z-index: -1;*/
+}
+
+.bottombar {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  align-items: center;
+  background-color: inherit;
+}

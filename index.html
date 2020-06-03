@@ -1,0 +1,53 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="body__blue" onLoad="download()">
+<nav class="navbar navbar__blue">
+  <div class="navbar-text navbar-text__blue">
+    Aufgaben
+  </div>
+  <div class="navbar-item--container">
+    <input type="text" class="navbar-item--search" id="search-text" onKeyUp="search()" style="display: none">
+    </input>
+    <button class="navbar-item">
+    <span class="material-icons custom-icons"  onClick="toggleSearch()" id="search-button">
+      search
+    </span>
+    </button>
+    <button class="navbar-item">
+    <span class="material-icons custom-icons">
+      account_circle
+    </span></button>
+  </div>
+</nav>
+
+<main class="todo--container">
+  <div class="todo-item todo-item__blue" id="todo-template">
+    <div class="todo-item--container">
+      <input type="checkbox"></input>
+      <div class="todo-item--title">
+        <div class="todo-item--title-text" id="todo-text">TODO-1</div>
+      </div>
+    </div>
+    <button class="todo-item--button" id="todo-delete">
+      <span class="material-icons custom-icons">
+      delete_forever</span>
+    </button>
+  </div>
+</main>
+
+<div class="bottombar">
+  <input type="text" class="add-todo--text" placeholder="ToDo-Text hier einfügen..." id="new-todo-text">
+  </input>
+  <button class="addbutton" onClick="addNewTodo()">
+  <span class="material-icons custom-icons">
+    add_circle_outline
+  </span>
+  </button>
+</div>
+</body>
+</html>
